@@ -1,0 +1,105 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    darkMode: "class",
+    content: [
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.jsx",
+        "./node_modules/react-tailwindcss-datepicker/dist/index.esm.{js,ts}",
+    ],
+
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    50: "#eef5fb",
+                    100: "#d9e8f5",
+                    200: "#b7d3eb",
+                    300: "#8cb7dd",
+                    400: "#5d95cb",
+                    500: "#2f6fb2",
+                    600: "#1f568f",
+                    700: "#15416d",
+                    800: "#0d3354",
+                    900: "#092542",
+                    950: "#041321",
+                },
+
+                secondary: {
+                    50: "#fcf8ed",
+                    100: "#f8efcf",
+                    200: "#f2df9d",
+                    300: "#eccd6f",
+                    400: "#e6bf54",
+                    500: "#E2B350",
+                    600: "#c7942b",
+                    700: "#a37721",
+                    800: "#845f1f",
+                    900: "#6d4e1b",
+                    950: "#3d2b0f",
+                },
+                info: {
+                    50: "#EFF6FF",
+                    100: "#DBEAFE",
+                    200: "#BFDBFE",
+                    300: "#93C5FD",
+                    400: "#60A5FA",
+                    500: "#3B82F6",
+                    600: "#2563EB",
+                    700: "#1D4ED8",
+                    800: "#1E40AF",
+                    900: "#1E3A8A",
+                    950: "#172554",
+                },
+                success: {
+                    50: "#F0FDF4",
+                    100: "#DCFCE7",
+                    200: "#BBF7D0",
+                    300: "#86EFAC",
+                    400: "#4ADE80",
+                    500: "#22C55E",
+                    600: "#16A34A",
+                    700: "#15803D",
+                    800: "#166534",
+                    900: "#14532D",
+                    950: "#052E16",
+                },
+                warning: {
+                    50: "#FEFCE8",
+                    100: "#FEF9C3",
+                    200: "#FEF08A",
+                    300: "#FDE047",
+                    400: "#FACC15",
+                    500: "#EAB308",
+                    600: "#CA8A04",
+                    700: "#A16207",
+                    800: "#854D0E",
+                    900: "#713F12",
+                    950: "#422006",
+                },
+                error: {
+                    50: "#FEF2F2",
+                    100: "#FEE2E2",
+                    200: "#FECACA",
+                    300: "#FCA5A5",
+                    400: "#F87171",
+                    500: "#EF4444",
+                    600: "#DC2626",
+                    700: "#B91C1C",
+                    800: "#991B1B",
+                    900: "#7F1D1D",
+                    950: "#450A0A",
+                },
+            },
+            fontFamily: {
+                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+            },
+        },
+    },
+
+    // plugins: [forms],
+};

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+/* React Quill Global Style */
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+    border: none !important;
+}
+
+.ql-container {
+    border-radius: 0.75rem !important;
+}
+
+.ql-editor {
+    min-height: 2.5rem !important;
+    max-height: 8rem !important;
+    overflow-y: auto !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    overflow-wrap: anywhere !important;
+    box-sizing: border-box !important;
+    padding: 0.5rem 3rem 0.5rem 0.75rem !important;
+}
+
+.ql-editor.ql-blank::before {
+    left: 0.75rem !important;
+    right: 0.75rem !important;
+}
+
+.tiny-mce-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+.tiny-mce-text ul {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+.tiny-mce-text ul > li {
+    list-style-type: disc !important;
+}
+
+.tiny-mce-text ol {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+.tiny-mce-text ol > li {
+    list-style-type: decimal !important;
+}
+
+.tiny-mce-text h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    letter-spacing: -1px;
+}
+.tiny-mce-text a {
+    color: #3b82f6;
+}

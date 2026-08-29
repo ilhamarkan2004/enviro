@@ -17,6 +17,8 @@ class Task extends Model
         'deadline_at',
         'status',
         'priority',
+        'is_reminded',
+        'is_overdue_notified',
     ];
 
     public function pic()

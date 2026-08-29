@@ -37,9 +37,10 @@ export default function AuthLayout({ children }) {
                                     Selamat Datang di PT Properindo Enviro Tech
                                 </p>
                                 <p className="text-gray-100 text-sm mt-2">
-                                    Kami membantu Anda meningkatkan kompetensi
-                                    dengan pelatihan profesional, sertifikasi,
-                                    dan penyaluran kerja yang terintegrasi.
+                                    Sistem Manajemen Tugas dan Kinerja terpadu
+                                    untuk memastikan produktivitas dan
+                                    efektivitas tim dalam mencapai target
+                                    perusahaan.
                                 </p>
                             </div>
                         </div>
@@ -55,13 +56,12 @@ export default function AuthLayout({ children }) {
 
                             <div className="absolute bottom-20 px-10 z-10">
                                 <p className="text-white text-3xl font-medium">
-                                    Tingkatkan Keterampilan Anda
+                                    Kelola Pekerjaan Lebih Terorganisir
                                 </p>
                                 <p className="text-gray-100 text-sm mt-2">
-                                    Nikmati pelatihan premium dengan materi
-                                    praktis dan instruktur berpengalaman yang
-                                    disesuaikan dengan kebutuhan industri saat
-                                    ini.
+                                    Pantau dan selesaikan setiap tugas dengan
+                                    mudah. Kolaborasi antar departemen menjadi
+                                    lebih efektif, transparan, dan efisien.
                                 </p>
                             </div>
                         </div>
@@ -77,12 +77,12 @@ export default function AuthLayout({ children }) {
 
                             <div className="absolute bottom-20 px-10 z-10">
                                 <p className="text-white text-3xl font-medium">
-                                    Raih Karier Impian
+                                    Pantau Progres Kinerja Anda
                                 </p>
                                 <p className="text-gray-100 text-sm mt-2">
-                                    Kami mendampingi Anda dari tahap pelatihan
-                                    hingga siap bekerja, dengan dukungan penuh
-                                    untuk kesuksesan karier Anda.
+                                    Lacak riwayat pekerjaan dan pencapaian
+                                    kinerja secara real-time untuk mendukung
+                                    pertumbuhan perusahaan yang berkelanjutan.
                                 </p>
                             </div>
                         </div>

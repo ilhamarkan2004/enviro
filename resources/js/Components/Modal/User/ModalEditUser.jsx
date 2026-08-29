@@ -439,6 +439,34 @@ const ModalEditUser = ({
                                 )}
                             </div>
 
+                            <div className="flex flex-col gap-2">
+                                <label className="text-sm">Status</label>
+
+                                <Select
+                                    options={[
+                                        { value: "1", label: "Aktif" },
+                                        { value: "0", label: "Tidak Aktif" },
+                                    ]}
+                                    value={{
+                                        value: data.status,
+                                        label: data.status === "1" ? "Aktif" : "Tidak Aktif",
+                                    }}
+                                    onChange={(selected) =>
+                                        setData("status", selected?.value || "1")
+                                    }
+                                    placeholder="Pilih Status"
+                                    isSearchable={false}
+                                    styles={selectStyles}
+                                    className="text-sm"
+                                />
+
+                                {errors.status && (
+                                    <span className="text-xs text-red-500">
+                                        {errors.status}
+                                    </span>
+                                )}
+                            </div>
+
                             {/* TANGGAL LAHIR */}
                             <div className="flex flex-col gap-2">
                                 <label className="text-sm">Tanggal Lahir</label>

@@ -157,6 +157,9 @@ export default function Index({ data }) {
                                     <th className="min-w-[120px] px-4 py-4">
                                         Gender
                                     </th>
+                                    <th className="min-w-[120px] px-4 py-4">
+                                        Status
+                                    </th>
                                     <th className="min-w-[180px] px-4 py-4">
                                         Departemen
                                     </th>
@@ -208,6 +211,13 @@ export default function Index({ data }) {
                                                 : item.gender === "P"
                                                   ? "Perempuan"
                                                   : "-"}
+                                        </td>
+                                        <td className="px-4 py-5">
+                                            {item.status == 1 ? (
+                                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Aktif</span>
+                                            ) : (
+                                                <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Tidak Aktif</span>
+                                            )}
                                         </td>
                                         <td className="px-4 py-5">
                                             {item.department?.name || "-"}

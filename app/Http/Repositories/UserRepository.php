@@ -34,6 +34,7 @@ class UserRepository
             'img' => 'nullable|image|max:2048',
             'department_id' => 'nullable',
             'position_id' => 'nullable',
+            'status' => 'nullable|in:0,1',
         ];
     }
 
@@ -48,6 +49,7 @@ class UserRepository
             'dob' => $request->input('dob'),
             'department_id' => $request->input('department_id'),
             'position_id' => $request->input('position_id'),
+            'status' => $request->input('status', 1),
         ];
 
         if ($request->filled('password')) {

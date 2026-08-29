@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\DB;
 
 class TaskSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $tasksData = [
@@ -26,9 +23,23 @@ class TaskSeeder extends Seeder
             ['name' => 'Audit dokumen internal', 'pic_name' => 'Maya', 'deadline_at' => '2026-10-10 00:00:00', 'status' => 0, 'priority' => 1],
             ['name' => 'Pembuatan laporan keuangan', 'pic_name' => 'Karin', 'deadline_at' => '2026-10-15 00:00:00', 'status' => 1, 'priority' => 2],
             ['name' => 'Perbaikan sistem aplikasi', 'pic_name' => 'Rizky', 'deadline_at' => '2026-10-12 00:00:00', 'status' => 1, 'priority' => 2],
+            ['name' => 'Strategi Pemasaran Q4', 'pic_name' => 'Fajar', 'deadline_at' => '2026-11-01 00:00:00', 'status' => 1, 'priority' => 2],
+            ['name' => 'Desain Brosur Baru', 'pic_name' => 'Gita', 'deadline_at' => '2026-10-20 00:00:00', 'status' => 0, 'priority' => 1],
+            ['name' => 'Review Kontrak Vendor', 'pic_name' => 'Hasan', 'deadline_at' => '2026-09-29 00:00:00', 'status' => 2, 'priority' => 2],
+            ['name' => 'Pembuatan Draft MoU', 'pic_name' => 'Intan', 'deadline_at' => '2026-10-05 00:00:00', 'status' => 1, 'priority' => 1],
+            ['name' => 'Perencanaan Struktur Mesin', 'pic_name' => 'Joko', 'deadline_at' => '2026-12-01 00:00:00', 'status' => 0, 'priority' => 2],
+            ['name' => 'Maintenance Mesin A', 'pic_name' => 'Kiki', 'deadline_at' => '2026-08-24 00:00:00', 'status' => 1, 'priority' => 2],
+            ['name' => 'Kalibrasi Sensor', 'pic_name' => 'Lestari', 'deadline_at' => '2026-09-28 00:00:00', 'status' => 2, 'priority' => 1],
+            ['name' => 'Inspeksi Lapangan', 'pic_name' => 'Mamat', 'deadline_at' => '2026-10-15 00:00:00', 'status' => 1, 'priority' => 1],
+            ['name' => 'Pembersihan Area Produksi', 'pic_name' => 'Nina', 'deadline_at' => '2026-09-30 00:00:00', 'status' => 2, 'priority' => 0],
+            ['name' => 'Pengadaan Barang Inventaris', 'pic_name' => 'Sari', 'deadline_at' => '2026-10-02 00:00:00', 'status' => 0, 'priority' => 1],
+            ['name' => 'Rekonsiliasi Bank', 'pic_name' => 'Karin', 'deadline_at' => '2026-08-26 00:00:00', 'status' => 1, 'priority' => 2],
+            ['name' => 'Pelatihan Keselamatan Kerja', 'pic_name' => 'Eko', 'deadline_at' => '2026-10-10 00:00:00', 'status' => 0, 'priority' => 1],
+            ['name' => 'Evaluasi Kinerja Tahunan', 'pic_name' => 'Maya', 'deadline_at' => '2026-12-15 00:00:00', 'status' => 0, 'priority' => 2],
+            ['name' => 'Update SOP Lingkungan', 'pic_name' => 'Taufik', 'deadline_at' => '2026-10-25 00:00:00', 'status' => 1, 'priority' => 2],
+            ['name' => 'Testing Aplikasi Baru', 'pic_name' => 'Lukman', 'deadline_at' => '2026-09-27 00:00:00', 'status' => 2, 'priority' => 1],
         ];
 
-        // get a fallback user in case a name doesn't exist (e.g. superadmin)
         $fallbackUser = User::first();
 
         DB::beginTransaction();

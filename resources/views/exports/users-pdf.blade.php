@@ -107,7 +107,8 @@
                 <th style="padding: 8px; text-align: left;" width="20%">Email</th>
                 <th style="padding: 8px; text-align: left;" width="12%">Telepon</th>
                 <th style="padding: 8px; text-align: center;" width="8%">Gender</th>
-                <th style="padding: 8px; text-align: left;" width="15%">Departemen</th>
+                <th style="padding: 8px; text-align: center;" width="8%">Status</th>
+                <th style="padding: 8px; text-align: left;" width="13%">Departemen</th>
                 <th style="padding: 8px; text-align: left;" width="10%">Jabatan</th>
                 <th style="padding: 8px; border-radius: 0 8px 8px 0; text-align: left;" width="10%">Role</th>
             </tr>
@@ -120,6 +121,7 @@
                     <td style="padding: 8px;">{{ $user->email }}</td>
                     <td style="padding: 8px;">{{ $user->phone_number ?? '-' }}</td>
                     <td style="padding: 8px;" class="text-center">{{ $user->gender == 'L' ? 'L' : ($user->gender == 'P' ? 'P' : '-') }}</td>
+                    <td style="padding: 8px;" class="text-center">{{ $user->status == 1 ? 'Aktif' : 'Tidak Aktif' }}</td>
                     <td style="padding: 8px;">{{ $user->department ? $user->department->name : '-' }}</td>
                     <td style="padding: 8px;">{{ $user->position ? $user->position->name : '-' }}</td>
                     <td style="padding: 8px;">{{ count($user->roles) > 0 ? $user->roles[0]->name : '-' }}</td>

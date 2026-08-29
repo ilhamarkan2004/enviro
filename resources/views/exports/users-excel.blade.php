@@ -6,6 +6,7 @@
         <th>Email</th>
         <th>Telepon</th>
         <th>Gender</th>
+        <th>Status</th>
         <th>Departemen</th>
         <th>Jabatan</th>
         <th>Role</th>
@@ -20,6 +21,7 @@
             <td>{{ $user->email }}</td>
             <td>{{ $user->phone_number ?? '-' }}</td>
             <td>{{ $user->gender == 'L' ? 'Laki-laki' : ($user->gender == 'P' ? 'Perempuan' : '-') }}</td>
+            <td>{{ $user->status == 1 ? 'Aktif' : 'Tidak Aktif' }}</td>
             <td>{{ $user->department ? $user->department->name : '-' }}</td>
             <td>{{ $user->position ? $user->position->name : '-' }}</td>
             <td>{{ count($user->roles) > 0 ? $user->roles[0]->name : '-' }}</td>

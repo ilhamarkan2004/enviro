@@ -66,6 +66,7 @@ class UserSeeder extends Seeder
             'gender' => 'L',
             'password' => Hash::make('password'),
             'email_verified_at' => now(),
+            'status' => 1,
         ]);
 
         $admin->assignRole('admin');

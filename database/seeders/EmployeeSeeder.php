@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Hash;
 
 class EmployeeSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $employees = [
@@ -26,6 +23,17 @@ class EmployeeSeeder extends Seeder
             ['name' => 'Maya Putri', 'department' => 'HR', 'position' => 'HR Supervisor', 'email' => 'maya@properindoenviro.co.id', 'phone' => '081234567893', 'role' => 'spv'],
             ['name' => 'Taufik Hidayat', 'department' => 'Environment', 'position' => 'Environmental Supervisor', 'email' => 'taufik@properindoenviro.co.id', 'phone' => '081234567894', 'role' => 'spv'],
             ['name' => 'Rizky Maulana', 'department' => 'IT', 'position' => 'Web Developer', 'email' => 'rizky@properindoenviro.co.id', 'phone' => '081234567895', 'role' => 'employee'],
+            ['name' => 'Sari Kurnia', 'department' => 'Finance', 'position' => 'Finance Staff', 'email' => 'sari@properindoenviro.co.id', 'phone' => '081211112222', 'role' => 'employee'],
+            ['name' => 'Karin Novilda', 'department' => 'Finance', 'position' => 'Finance Staff', 'email' => 'karin@properindoenviro.co.id', 'phone' => '081233334444', 'role' => 'employee'],
+            ['name' => 'Fajar Sidik', 'department' => 'Marketing', 'position' => 'Marketing Supervisor', 'email' => 'fajar@properindoenviro.co.id', 'phone' => '081255556666', 'role' => 'spv'],
+            ['name' => 'Gita Gutawa', 'department' => 'Marketing', 'position' => 'Marketing Staff', 'email' => 'gita@properindoenviro.co.id', 'phone' => '081277778888', 'role' => 'employee'],
+            ['name' => 'Hasan Basri', 'department' => 'Legal', 'position' => 'Legal Supervisor', 'email' => 'hasan@properindoenviro.co.id', 'phone' => '081299990000', 'role' => 'spv'],
+            ['name' => 'Intan Nuraini', 'department' => 'Legal', 'position' => 'Legal Staff', 'email' => 'intan@properindoenviro.co.id', 'phone' => '081311112222', 'role' => 'employee'],
+            ['name' => 'Joko Anwar', 'department' => 'Engineering', 'position' => 'Engineering Manager', 'email' => 'joko@properindoenviro.co.id', 'phone' => '081333334444', 'role' => 'spv'],
+            ['name' => 'Kiki Fatmala', 'department' => 'Engineering', 'position' => 'Engineer', 'email' => 'kiki@properindoenviro.co.id', 'phone' => '081355556666', 'role' => 'employee'],
+            ['name' => 'Lestari Ayu', 'department' => 'Engineering', 'position' => 'Engineer', 'email' => 'lestari@properindoenviro.co.id', 'phone' => '081377778888', 'role' => 'employee'],
+            ['name' => 'Mamat Alkatiri', 'department' => 'Operation', 'position' => 'Operator', 'email' => 'mamat@properindoenviro.co.id', 'phone' => '081399990000', 'role' => 'employee'],
+            ['name' => 'Nina Zatulini', 'department' => 'Operation', 'position' => 'Operator', 'email' => 'nina@properindoenviro.co.id', 'phone' => '081411112222', 'role' => 'employee'],
         ];
 
         foreach ($employees as $data) {
@@ -47,6 +55,7 @@ class EmployeeSeeder extends Seeder
                     'password' => Hash::make('password'),
                     'department_id' => $department->id,
                     'position_id' => $position->id,
+                    'status' => 1,
                 ]
             );
 
